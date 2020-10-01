@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Modificando HTML #01</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+</head>
+
+<body class='conteudo exercicio'>
+    <script>
+        const body = document.querySelector('body') // Select the element
+
+        const div1 = document.createElement('div')  // Create a new element in the HTML
+        div1.classList.add('destaque') // Add the class to the element
+        div1.innerHTML = 'Primeiro'  // Define the content of the element
+
+        const div2 = document.createElement('div')
+        div2.setAttribute('wm-atributo', 'valor')
+        div2.innerHTML = 'Segundo'
+
+        const p = document.createElement('p')
+        p.innerHTML = 'Terceiro'
+        const div3 = document.createElement('div')
+        div3.appendChild(p)
+
+        body.appendChild(div1) // Add the created element to the body
+        body.appendChild(div2) // Add the created element to the body
+        body.appendChild(div3) // Add the created element to the body
+
+        const texto = document.createTextNode('Antes...') 
+        div3.insertBefore(texto, div3.childNodes[0]) // Insert a new text before an element defined
+    
+        const div4 = div3.cloneNode(true) // If true, the children are cloned. And if false, the children aren't cloned
+        body.appendChild(div4)
+        body.removeChild(div3)
+    </script>
+</body>
+
+</html>

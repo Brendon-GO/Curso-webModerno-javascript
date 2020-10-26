@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Arthur Pendragon",
+      "email": "aoliveira@cod3r.com.br"
+    },
+    {
+      "name": "Kazuto Kirigaya",
+      "email": "Kirito_sao@gmail.com",
+      "id": 3
+    }
+  ]
+}

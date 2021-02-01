@@ -1,11 +1,7 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
-  <v-toolbar-title>Most Used Words</v-toolbar-title>
+    <v-app-bar app color="primary" dark>
+      <v-toolbar-title>Most Used Words</v-toolbar-title>
     </v-app-bar>
 
     <v-main>
@@ -15,13 +11,13 @@
 </template>
 
 <script>
-import Home from "./components/Home"
+import Home from "./components/Home";
 
 export default {
   name: "App",
 
   components: {
-    Home
+    Home,
   },
 
   data: () => ({
